@@ -8,9 +8,8 @@ angular.module("app", ["fullPage.js"])
 	    anchors: ['herobanner', 'about', 'projects', 'Rotterdam', 'Madrid', 'London', 'Sofia'],
 	    navigation: true,
 	    navigationPosition: 'right',
-	    scrollingSpeed: 700
-
-
+	    scrollingSpeed: 700,
+	    verticalCentered: true
 
 
 
