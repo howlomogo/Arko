@@ -2,11 +2,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 
-// gulp.task('html', function(){
-// 	gulp.src('./dev/**/*.html')
-// 		.pipe(gulp.dest('./dist/'));
-// });
-
 gulp.task('pug', function buildHTML() {
 	return gulp.src('./dev/**/!(_)*.pug')
 	.pipe(pug({
@@ -37,9 +32,9 @@ gulp.task('img', function() {
 });
 
 gulp.task('watch', function() {
-	// gulp.watch('./dev/*.html', ['html']);
 	gulp.watch('./dev/**/*.pug', ['pug']);
 	gulp.watch('./dev/sass/**/*.scss', ['sass']);
+	gulp.watch('./dev/js/**/*.js', ['js']);
 	console.log("Watching...");
 });
 

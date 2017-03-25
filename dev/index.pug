@@ -1,8 +1,25 @@
-html
+html(data-ng-app="app")
 	head
 		include /_includes/_header
-	body
+	body(data-ng-controller="appcontroller")
 		include /_includes/_navigation
 
-		
+		div(full-page options="mainOptions")
+			#section1.section
+				h1 Some section
+			#section2.section.u-text-center
+				h1 ARKO was founded in 1996.
+				h1 Over the last 20 years, we have developed a large portfolio of beautiful and exciting projects. Our projects range from hotels to hospitals, and from housing schemes to offices.
+				h1 We have always taken an eco friendly stance on architecture and we always look into taking advantage of new cutting edge technologies that are available.
+			#section3.section
+				h1 Some section
+			#section4.section
+				h1 Some section
+			#section5.section
+				h1 Some section
+			#section6.section
+				h1 Some section
+			#section7.section
+				h1 Some section
+
 		include /_includes/_footer

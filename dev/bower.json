@@ -1,0 +1,21 @@
+{
+  "name": "dist",
+  "homepage": "https://github.com/howlomogo/Arko",
+  "authors": [
+    "Matt Pilcher <mattpilcher87@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-fullpage.js": "git://github.com/hellsan631/angular-fullpage.js.git#44ec3a2e0b7bf7cb5cdcf6275097ee567961562e",
+    "inuitcss": "^6.0.0-beta.4"
+  }
+}
