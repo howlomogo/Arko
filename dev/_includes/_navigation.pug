@@ -1,0 +1,13 @@
+//- The overlay
+#myNav.overlay
+	//- Button to close the overlay navigation
+	a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+	//- Overlay content
+	.overlay-content
+		a(href='#') About
+		a(href='#') Services
+		a(href='#') Clients
+		a(href='#') Contact
+//- Use any element to open/show the overlay navigation menu
+
+.ion.ion-navicon-round.u-h2(onclick='openNav()' style="color: #ffffff; position: fixed; top: 50px; right: 50px; z-index: 999; cursor: pointer;")
