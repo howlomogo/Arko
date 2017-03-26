@@ -82,12 +82,12 @@ angular.module('app', ['fullPage.js', 'ngAnimate'])
 
     //- ADD
     function animateSection1() {
-    	$('.section1-animation--1').animateCss('fadeInUp');
+    	$('.section1-animation--1').animateCss('fadeIn');
     	$('.section1-animation--2').animateCss('fadeInLeft');
     	$('.section1-animation--3').animateCss('fadeInLeft');
     	$('.section1-animation--4').animateCss('fadeInLeft');
     	$('.section1-animation--5').animateCss('fadeInUp');
-    	$('.section1-animation--6').animateCss('rotateInDownRight');
+    	$('.section1-animation--6').animateCss('lightSpeedIn');
     	$('.section1-animation--7').animateCss('fadeInUp');
     }
 

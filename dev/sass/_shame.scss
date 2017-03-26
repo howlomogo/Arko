@@ -24,18 +24,48 @@
 
 .project-content-box {
 	position: absolute;
-	width: 300px;
+	width: 360px;
 	background-color: rgba(0,0,0,0.3);
 	color: $color-white;
 	padding: 24px;
-	top: 50%;
-	transform: translate(0, -50%);
+
+	hr {
+		border: none;
+		border-top: 1px solid $color-white;
+		width: 50px;
+		margin-bottom: 12px;
+	}
+
+	h5 {
+		font-style: italic;
+		font-weight: 500;
+		margin-bottom: 12px;
+	}
+
+	//- When on tablet center these
 
 	&--left {
-		left: 0;
+		left: 25;
+		top: 50%;
+		transform: translate(0, -50%);
 	}
 
 	&--right {
-		right: 0;
+		right: 25;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+
+	&--center {
+		width:600px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&--center-bottom {
+		// width: 600px;
+		// left: 50%;
+		// transform: translate(-50%, 0%);
+		margin-bottom: 25px;
 	}
 }
