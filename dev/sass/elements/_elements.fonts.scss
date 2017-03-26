@@ -2,8 +2,16 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
 }
 
-p {
+p, a {
 	font-family: 'Open Sans', sans-serif;
+}
+
+.e-font-weight--100 {
+	font-weight: 100;
+}
+
+.e-font-weight--200 {
+	font-weight: 200;
 }
 
 .e-font-weight--300 {
@@ -32,4 +40,8 @@ p {
 
 .e-font-weight--900 {
 	font-weight: 900;
+}
+
+.e-font-size--12 {
+	font-size: 12px;
 }

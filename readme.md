@@ -1,3 +1,4 @@
-Arko Website
+# Arko Website
 
-# Navigation
+navigation
+make hero logo smaller

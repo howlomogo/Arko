@@ -1,22 +1,36 @@
 .section1-animation {
 	&--1 {
-		font-size: 70px;
 		animation-duration: 0.5s;
 		animation-delay: 0.5s;
-		// animation-iteration-count: infinite;
 	}
 	&--2 {
-		font-size: 70px;
 		animation-duration: 0.5s;
 		animation-delay: 1s;
-		// animation-iteration-count: infinite;
 	}
 	&--3 {
-		font-size: 70px;
-		margin-top: -10px;
+
 		animation-duration: 0.5s;
 		animation-delay: 1.5s;
-		// animation-iteration-count: infinite;
+	}
+	&--4 {
+		animation-duration: 0.5s;
+		animation-delay: 2s;
+	}
+	&--5 {
+		font-size: 40px;
+		animation-duration: 0.5s;
+		animation-delay: 2.5s;
+	}
+	&--6 {
+		font-size: 40px;
+		animation-duration: 0.5s;
+		animation-delay: 3s;
+	}
+	&--7 {
+		font-size: 40px;
+		margin-top: -10px;
+		animation-duration: 0.5s;
+		animation-delay: 3.5s;
 	}
 }
 

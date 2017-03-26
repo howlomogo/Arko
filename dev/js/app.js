@@ -2,6 +2,23 @@ angular.module('app', ['fullPage.js', 'ngAnimate'])
 
 .controller('appcontroller', ['$scope', function($scope) {
 
+	$scope.navigationOpen = false;
+
+	$scope.toggleNavigation = function() {
+		console.log("This is cool");
+		$scope.navigationOpen = !$scope.navigationOpen;
+
+		if($scope.navigationOpen) {
+			document.getElementById("myNav").style.opacity = 1;
+			document.getElementById("myNav").style.pointerEvents = 'auto';
+		}
+
+		else {
+		    document.getElementById("myNav").style.opacity = 0;
+			document.getElementById("myNav").style.pointerEvents = 'none';
+		}
+	};
+
     $scope.mainOptions = {
 	    // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
 	    anchors: ['Herobanner', 'About', 'Projects', 'Rotterdam', 'Madrid', 'London', 'Sofia'],
@@ -28,10 +45,6 @@ angular.module('app', ['fullPage.js', 'ngAnimate'])
 		// 	console.log('===============');
 		// 	console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
 		// }
-
-
-
-
     };
 
     // Extend jQuery
@@ -70,8 +83,12 @@ angular.module('app', ['fullPage.js', 'ngAnimate'])
     //- ADD
     function animateSection1() {
     	$('.section1-animation--1').animateCss('fadeInUp');
-    	$('.section1-animation--2').animateCss('fadeInUp');
-    	$('.section1-animation--3').animateCss('fadeInUp');
+    	$('.section1-animation--2').animateCss('fadeInLeft');
+    	$('.section1-animation--3').animateCss('fadeInLeft');
+    	$('.section1-animation--4').animateCss('fadeInLeft');
+    	$('.section1-animation--5').animateCss('fadeInUp');
+    	$('.section1-animation--6').animateCss('rotateInDownRight');
+    	$('.section1-animation--7').animateCss('fadeInUp');
     }
 
     function animateSection2() {

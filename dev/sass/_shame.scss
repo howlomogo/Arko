@@ -21,3 +21,21 @@
 .u-inline-block {
 	display: inline-block;
 }
+
+.project-content-box {
+	position: absolute;
+	width: 300px;
+	background-color: rgba(0,0,0,0.3);
+	color: $color-white;
+	padding: 24px;
+	top: 50%;
+	transform: translate(0, -50%);
+
+	&--left {
+		left: 0;
+	}
+
+	&--right {
+		right: 0;
+	}
+}
