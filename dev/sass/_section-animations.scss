@@ -1,3 +1,23 @@
+.navigation-animation {
+	&--1 {
+		animation-duration: 0.5s;
+		animation-delay: 0.2s;
+	}
+	&--2 {
+		animation-duration: 0.5s;
+		animation-delay: 0.4s;
+	}
+	&--3 {
+
+		animation-duration: 0.5s;
+		animation-delay: 0.6s;
+	}
+	&--4 {
+		animation-duration: 0.5s;
+		animation-delay: 0.8s;
+	}
+}
+
 .section1-animation {
 	&--1 {
 		animation-duration: 0.5s;
@@ -50,4 +70,45 @@
 		animation-delay: 1.5s;
 		// animation-iteration-count: infinite;
 	}
+}
+
+//- Project Overview
+.section3-animation {
+	&--1 {
+		animation-duration: 0.5s;
+		animation-delay: 0.5s;
+		// animation-iteration-count: infinite;
+	}
+}
+
+//- Project Section Animations
+$projectFirstSection: 4;
+$projectLastSection: 7;
+@for $i from $projectFirstSection through $projectLastSection {
+    .section#{$i}-animation {
+		&--1 {
+			animation-duration: 0.2s;
+			animation-delay: 0.5s;
+		}
+		&--2 {
+			animation-duration: 0.5s;
+			animation-delay: 1s;
+		}
+		&--3 {
+			animation-duration: 0.5s;
+			animation-delay: 1.2s;
+		}
+		&--4 {
+			animation-duration: 0.5s;
+			animation-delay: 1.8s;
+		}
+		&--5 {
+			animation-duration: 0.5s;
+			animation-delay: 2.3s;
+		}
+		&--6 {
+			animation-duration: 0.5s;
+			animation-delay: 2.8s;
+		}
+    }
 }
