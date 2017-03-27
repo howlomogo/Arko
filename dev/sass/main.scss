@@ -84,6 +84,9 @@ $inuit-offsets: true;
 @import "../bower_components/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.text-align";
 
+// HAMBURGER!
+$hamburger-layer-color: $color-white !default;
+@import "../bower_components/css-hamburgers/_sass/hamburgers/hamburgers";
 
 
 @import "nav";

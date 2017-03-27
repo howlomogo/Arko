@@ -5,43 +5,184 @@
 	height: 100%;
     background-size: cover;
     background-position: center;
-    color: $color-white;
     cursor: pointer;
 
-    &:hover {
-    	h5 {
-    		animation: pulse 1.2s infinite;
-    		-webkit-animation: pulse 1.2s infinite;
-    		-moz-animation: pulse 1.2s infinite;
-    		-o-animation: pulse 1.2s infinite;
-    	}
-    	// background-size: 120%;
-    }
+
+	@include mq($from: tablet) {
+
+
+		  -webkit-filter: grayscale(0%);
+		  -webkit-transition: .5s ease-in-out;
+		  -moz-filter: grayscale(0%);
+		  -moz-transition: .5s ease-in-out;
+		  -o-filter: grayscale(0%);
+		  -o-transition: .5s ease-in-out;
+		  filter: grayscale(0%);
+
+		&:hover {
+	    -webkit-filter: grayscale(100%);
+	    -webkit-transition: .5s ease-in-out;
+	    -moz-filter: grayscale(100%); 
+	    -moz-transition: .5s ease-in-out;
+	    -o-filter: grayscale(100%); 
+	    -o-transition: .5s ease-in-out;
+	    filter: grayscale(100%);
+		}
+	}
+
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
 }
 
-.project-inner {
+.project-overview--content {
+	height: 100px;
+    color: $color-white;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	left: 0;
 	padding: 24px;
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.4);
+	z-index: 2;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
 
 	h5 {
+		@include mq($until: tablet) {
+			font-size: 14px;
+		}
+
 		font-weight: 500;
-		margin-bottom: 0px;
+		margin-bottom: 24px;
 		span {
 			font-style: italic;
 			font-weight: 200;
 		}
 	}
+
+	.ion {
+		color: #fff;
+		font-size: 24px;
+	}
 }
 
 #section3 {
+
+
+	.projects-overview--header {
+		position: absolute;
+	    top: 200px;
+	    width: 100%;
+	    color: #fff;
+	    z-index: 1;
+	    background-color: rgba(0,0,0,0.5);
+	    padding: 24px;
+
+	    // h2 {
+	    // 	margin-bottom: 0px;
+	    // }
+	}
+
+	h2 {
+	    position: absolute;
+	    top: 33px;
+	    left: 190px;
+	    z-index: 2;
+	    color: #fff;
+	    font-weight: 200;
+	    font-size: 26px;
+		@include mq($until: tablet) {
+			top: 70px;
+    		left: 50px;
+		}
+	}
+
 	.o-layout__item {
+
+		&:nth-child(1) {
+			.project-overview--box {
+				border-left: none;
+				@include mq($until: tablet) {
+					border-bottom: 1px solid #000;
+				}
+			}
+		}
+
+		&:nth-child(2) {
+			@include mq($until: tablet) {
+				border-bottom: 1px solid #000;
+				border-right: none;
+			}
+		}
+
+		&:nth-child(3) {
+			.project-overview--box {
+				@include mq($until: tablet) {
+					border-top: 1px solid #000;
+					border-left: none;
+				}
+			}
+		}
+
+		&:nth-child(4) {
+			.project-overview--box {
+				border-right: none;
+				@include mq($until: tablet) {
+					border-top: 1px solid #000;
+				}
+			}
+		}
+
+		position: relative;
 		height: 50%;
-		@media (min-width: 46.25em) {
+		background-color: #000000;
+		@include mq($from: tablet) {
 			height: 100%;
 		}
+
+		.overlay--black {
+			position: absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			background-color: #000;
+			z-index: 1;
+			opacity: 0.5;
+
+			// Hide overlay pn mobile due to no touch
+			// @include mq($until: tablet) {
+			// 	display: none;
+			// }
+		}
+
+
+	    &:hover {
+	    	.project-overview--content {
+	    		height: 140px;
+	   //  		    -webkit-transition: height 2s; /* Safari */
+    // transition: height 2s;
+	    	}
+	.ion {
+		color: #fff;
+		font-size: 24px;
+	    		animation: bounce 1s;
+	    		-webkit-animation: bounce 1s;
+	    		-moz-animation: bounce 1s;
+	    		-o-animation: bounce 1s;
+	}
+	    	h5 {
+	    		animation: pulse 0.6s ;
+	    		-webkit-animation: pulse 0.6s;
+	    		-moz-animation: pulse 0.6s ;
+	    		-o-animation: pulse 0.6s ;
+	    	}
+	    	background-size: 120%;
+	    }
+
+
+
+
+
 	}
 }

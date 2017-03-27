@@ -9,6 +9,7 @@ angular.module('app', ['fullPage.js', 'ngAnimate'])
 	$scope.toggleNavigation = function() {
 		$scope.navigationOpen = !$scope.navigationOpen;
 		if($scope.navigationOpen) {
+			$('.hamburger').addClass('is-active');
 			$('#navigation').addClass('is-active');
 	    	$('.navigation-animation--1').animateCss('fadeInUp');
 	    	$('.navigation-animation--2').animateCss('fadeInUp');
@@ -19,6 +20,7 @@ angular.module('app', ['fullPage.js', 'ngAnimate'])
 
 		else {
 			$('.navigation-animation').removeClass('animated ' + animations);
+			$('.hamburger').removeClass('is-active');
 			$('#navigation').removeClass('is-active');
 		}
 	};
