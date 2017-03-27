@@ -28,6 +28,8 @@
 	background-color: rgba(0,0,0,0.3);
 	color: $color-white;
 	padding: 24px;
+	max-height: 100%;
+	transform: translate(0, -50%);
 
 	hr {
 		border: none;
@@ -47,25 +49,10 @@
 	&--left {
 		left: 25;
 		top: 50%;
-		transform: translate(0, -50%);
 	}
 
 	&--right {
 		right: 25;
 		top: 50%;
-		transform: translate(0, -50%);
-	}
-
-	&--center {
-		width:600px;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-
-	&--center-bottom {
-		// width: 600px;
-		// left: 50%;
-		// transform: translate(-50%, 0%);
-		margin-bottom: 25px;
 	}
 }

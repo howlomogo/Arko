@@ -1,4 +1,3 @@
 # Arko Website
 
-navigation
-make hero logo smaller
+if enough time, fade out animations when cancelling them
