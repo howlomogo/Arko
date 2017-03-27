@@ -49,6 +49,10 @@
 		animation-duration: 0.5s;
 		animation-delay: 0.8s;
 	}
+	&--5 {
+		animation-duration: 0.5s;
+		animation-delay: 1s;
+	}
 }
 
 
@@ -121,29 +125,25 @@ $projectFirstSection: 4;
 $projectLastSection: 7;
 @for $i from $projectFirstSection through $projectLastSection {
     .section#{$i}-animation {
-		&--1 {
-			animation-duration: 0.2s;
-			animation-delay: 0.5s;
-		}
 		&--2 {
 			animation-duration: 0.5s;
-			animation-delay: 1s;
+			animation-delay: 0.5s;
 		}
 		&--3 {
 			animation-duration: 0.5s;
-			animation-delay: 1.2s;
+			animation-delay: 0.8s;
 		}
 		&--4 {
 			animation-duration: 0.5s;
-			animation-delay: 1.8s;
+			animation-delay: 1s;
 		}
 		&--5 {
 			animation-duration: 0.5s;
-			animation-delay: 2.3s;
+			animation-delay: 1.4s;
 		}
 		&--6 {
 			animation-duration: 0.5s;
-			animation-delay: 2.8s;
+			animation-delay: 1.8s;
 		}
     }
 }

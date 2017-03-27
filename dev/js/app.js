@@ -14,6 +14,7 @@ angular.module('app', ['fullPage.js', 'ngAnimate'])
 	    	$('.navigation-animation--2').animateCss('fadeInUp');
 	    	$('.navigation-animation--3').animateCss('fadeInUp');
 	    	$('.navigation-animation--4').animateCss('fadeInUp');
+	    	$('.navigation-animation--5').animateCss('fadeInUp');
 		}
 
 		else {
@@ -24,7 +25,7 @@ angular.module('app', ['fullPage.js', 'ngAnimate'])
 
 	
     $scope.mainOptions = {
-	    anchors: ['Herobanner', 'About', 'Projects', 'Rotterdam', 'Madrid', 'London', 'Sofia'],
+	    anchors: ['Herobanner', 'About', 'Projects', 'Rotterdam', 'Madrid', 'London', 'Sofia', 'Footer'],
 	    navigation: false,
 	    scrollingSpeed: 700,
 	    verticalCentered: true,
@@ -103,33 +104,33 @@ angular.module('app', ['fullPage.js', 'ngAnimate'])
     	$('.section4-animation--1').animateCss('fadeIn');
     	$('.section4-animation--2').animateCss('fadeIn');
     	$('.section4-animation--3').animateCss('zoomIn');
-    	$('.section4-animation--4').animateCss('fadeIn');
-    	$('.section4-animation--5').animateCss('fadeIn');
-    	$('.section4-animation--6').animateCss('fadeIn');
+    	$('.section4-animation--4').animateCss('fadeInUp');
+    	$('.section4-animation--5').animateCss('fadeInUp');
+    	$('.section4-animation--6').animateCss('fadeInUp');
     }
 
     function animateSection5() {
     	$('.section5-animation--1').animateCss('fadeIn');
     	$('.section5-animation--2').animateCss('fadeIn');
     	$('.section5-animation--3').animateCss('zoomIn');
-    	$('.section5-animation--4').animateCss('fadeIn');
-    	$('.section5-animation--5').animateCss('fadeIn');
-    	$('.section5-animation--6').animateCss('fadeIn');
+    	$('.section5-animation--4').animateCss('fadeInUp');
+    	$('.section5-animation--5').animateCss('fadeInUp');
+    	$('.section5-animation--6').animateCss('fadeInUp');
     }
 
     function animateSection6() {
     	$('.section6-animation--1').animateCss('fadeIn');
     	$('.section6-animation--2').animateCss('fadeIn');
     	$('.section6-animation--3').animateCss('zoomIn');
-    	$('.section6-animation--4').animateCss('fadeIn');
+    	$('.section6-animation--4').animateCss('fadeInUp');
     }
 
     function animateSection7() {
     	$('.section7-animation--1').animateCss('fadeIn');
     	$('.section7-animation--2').animateCss('fadeIn');
     	$('.section7-animation--3').animateCss('zoomIn');
-    	$('.section7-animation--4').animateCss('fadeIn');
-    	$('.section7-animation--5').animateCss('fadeIn');
-    	$('.section7-animation--6').animateCss('fadeIn');
+    	$('.section7-animation--4').animateCss('fadeInUp');
+    	$('.section7-animation--5').animateCss('fadeInUp');
+    	$('.section7-animation--6').animateCss('fadeInUp');
     }
 }]);

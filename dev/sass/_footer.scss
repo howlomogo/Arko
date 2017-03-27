@@ -1,0 +1,41 @@
+.c-footer {
+	color: $color-white;
+	text-align: center;
+	ul {
+		list-style: none;
+		margin: 0px;
+		li {
+			display: inline-block;
+
+			a {
+				color: $color-white;
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 200;
+				font-size: 18px;
+				text-decoration: none;
+				padding: 24px;
+			}
+		}
+	}
+
+	h4 {
+		font-size: 20px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+	}
+
+	hr {
+		border: none;
+		border-top: 1px solid $color-white;
+		width: 70px;
+		margin: 0px auto 12px auto;
+	}
+
+	p {
+		font-weight: 300;
+	}
+}
+
+.c-footer-copywrite {
+	font-size: 14px;
+}
