@@ -10,8 +10,9 @@
 	    font-weight: 200;
 	    font-size: 26px;
 		@include mq($until: tablet) {
-			top: 70px;
-    		left: 50px;
+			top: 52px;
+    		left: 24px;
+    		font-size:22px;
 		}
 	}
 
@@ -69,31 +70,36 @@
 	height: 100%;
     background-size: cover;
     background-position: center;
-    cursor: pointer;
+    // cursor: pointer;
 	border-left: 1px solid #000;
 	border-right: 1px solid #000;
 	color: $color-white;
+	overflow: hidden;
 
 	.project-overview--content {
 		position: absolute;
-		bottom: 0;
+		bottom: -50px;
 		right: 0;
 		left: 0;
-		padding: 24px;
-		background-color: rgba(0,0,0,0.4);
+		padding: 24px 12px;
+		background-color: rgba(0,0,0,0.5);
 		z-index: 2;
 	    -webkit-transition: all 0.5s; /* Safari */
 	    transition: all 0.5s;
+		pointer-events: none;
 
-		h5 {
+		h4 {
+			font-size: 18px;
 			font-weight: 500;
-			margin-bottom: 12px;
+			margin-bottom: 24px;
+			line-height: 26px;
 			span {
 				font-style: italic;
 				font-weight: 200;
 			}
 			@include mq($until: tablet) {
 				font-size: 14px;
+				line-height: 20px;
 			}
 		}
 
@@ -104,8 +110,10 @@
 	}
 
 
-	//- No animations on mobile
+	//- No animations or links on tablet due to touch
 	@include mq($from: tablet) {
+		pointer-events: auto;
+
 		-webkit-filter: grayscale(0%);
 		-webkit-transition: .5s ease-in-out;
 		-moz-filter: grayscale(0%);
@@ -124,20 +132,20 @@
 			filter: grayscale(100%);
 
 	    	.project-overview--content {
-	    		bottom: 200px;
+	    		bottom: 0px;
 
-		    	h5 {
-		    		animation: pulse 0.6s ;
-		    		-webkit-animation: pulse 0.6s;
-		    		-moz-animation: pulse 0.6s ;
-		    		-o-animation: pulse 0.6s ;
+		    	h4 {
+		    		// animation: pulse 0.6s infinite;
+		    		// -webkit-animation: pulse 0.6s infinite;
+		    		// -moz-animation: pulse 0.6s infinite;
+		    		// -o-animation: pulse 0.6s infinite;
 		    	}
 
 		    	.ion {
-		    		animation: pulse 1s;
-		    		-webkit-animation: pulse 1s;
-		    		-moz-animation: pulse 1s;
-		    		-o-animation: pulse 1s;
+		    		animation: rubberBand 2s infinite;
+		    		-webkit-animation: rubberBand 2s infinite;
+		    		-moz-animation: rubberBand 2s infinite;
+		    		-o-animation: rubberBand 2s infinite;
 		    	}
 	    	}
 		}

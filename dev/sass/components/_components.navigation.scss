@@ -32,6 +32,12 @@
         color: #BDBDBD;
         font-family: 'Montserrat', sans-serif;
         transition: 0.3s;
+        display: inline-block;
+
+        @include mq($until: tablet) {
+            font-size: 20px;
+            display: block;
+        }
 
         &:hover {
             color: #f1f1f1;
@@ -39,20 +45,18 @@
     }
 }
 
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-}
-
-
 .c-nav--burger {
-    font-size: 50px;
-    color: #ffffff;
+    color: $color-white;
     position: fixed;
-    top: 22px;
+    top: 40px;
     right: 50px;
     z-index: 999;
     cursor: pointer;
     outline: none;
+    @include mq($until: tablet) {
+        top: 24px;
+        right: 24px;
+    }
 }
 
 .c-nav--logo {
@@ -61,9 +65,11 @@
     left: 50px;
     z-index: 999;
     width: 130px;
+    transition: 0.3s;
 
-    svg {
-    width: 100%;
-    color: red !important;
+    @include mq($until: tablet) {
+        top: 24px;
+        left: 24px;
+        width: 110px;
     }
 }

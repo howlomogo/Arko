@@ -3,10 +3,20 @@
     text-align: center;
     color: #ffffff;
 
+    .hero-banner-svg {
+        width: 100%;
+        max-width: 400px;
+    }
+
     h1 {
     	display: inline-block;
     	margin-bottom: 0px;
     	font-weight: 200;
+
+        @include mq($until: tablet) {
+            font-size: 30px;
+            line-height: 42px;
+        }
     }
 
 	.section1-animation--6 {

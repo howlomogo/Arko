@@ -45,7 +45,7 @@ gulp.task('watch', function() {
 });
 
 // Force compile of everything
-gulp.task('compile', ['img', 'js', 'sass', 'pug']);
+gulp.task('compile', ['bower', 'img', 'js', 'sass', 'pug']);
 
 // Watch and compile
 gulp.task('develop', ['compile', 'watch']);
