@@ -1,0 +1,56 @@
+#section4 {
+	background-image: url("../img/Rotterdam.jpg");
+}
+
+#section5 {
+	background-image: url("../img/Madrid.jpg");
+}
+
+#section6 {
+	background-image: url("../img/London.jpg");
+}
+
+#section7 {
+	background-image: url("../img/Sofia.jpg");
+}
+
+.project-content-box {
+	position: absolute;
+	width: 380px;
+	background-color: rgba(0,0,0,0.5);
+	color: $color-white;
+	padding: 24px;
+	max-height: 100%;
+	transform: translate(0, -50%);
+
+	hr {
+		border: none;
+		border-top: 1px solid $color-white;
+		width: 50px;
+		margin-bottom: 12px;
+	}
+
+	h5 {
+		font-weight: 500;
+		margin-bottom: 12px;
+		span {
+			font-style: italic;
+			font-weight: 200;
+		}
+	}
+
+	p {
+		font-size: 14px;
+		font-weight: 200;
+	}
+
+	&--left {
+		left: 25;
+		top: 50%;
+	}
+
+	&--right {
+		right: 25;
+		top: 50%;
+	}
+}

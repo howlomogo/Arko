@@ -68,8 +68,14 @@ $inuit-wrapper-width: 1000px !default;
 //
 // Build and include your project’s UI Compoments here.
 @import "components/components.buttons";
+@import "components/components.navigation";
 
-
+// SECTIONS
+@import "components/components.section-1";
+@import "components/components.section-2";
+@import "components/components.section-3";
+@import "components/components.section-projects";
+@import "components/components.section-footer";
 
 
 
@@ -82,17 +88,14 @@ $inuit-offsets: true;
 @import "./bower_components/inuitcss/utilities/utilities.spacing";
 @import "./bower_components/inuitcss/utilities/utilities.print";
 @import "./bower_components/inuitcss/utilities/utilities.hide";
-@import "utilities/utilities.text-align";
+@import "utilities/utilities.utilities";
+@import "utilities/utilities.generic-animations";
+@import "utilities/utilities.section-animations";
+
 
 // HAMBURGER!
 $hamburger-layer-color: $color-white !default;
 @import "./bower_components/css-hamburgers/_sass/hamburgers/hamburgers";
 
 
-@import "nav";
-@import "icons";
-@import "animations";
 @import "shame";
-@import "section-animations";
-@import "projects-overview";
-@import "footer";
