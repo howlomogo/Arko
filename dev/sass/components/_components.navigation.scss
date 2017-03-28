@@ -13,18 +13,7 @@
         opacity: 1;
         pointer-events: auto;
     }
-}
 
-.overlay-content {
-    position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 100%;
-    text-align: center;
-    font-weight: 600;
-}
-
-.overlay {
     a {
         padding: 20px;
         text-decoration: none;
@@ -45,7 +34,16 @@
     }
 }
 
-.c-nav--burger {
+.overlay-content {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.nav--burger {
     color: $color-white;
     position: fixed;
     top: 40px;
@@ -59,7 +57,7 @@
     }
 }
 
-.c-nav--logo {
+.nav--logo {
     position: fixed;
     top: 35px;
     left: 50px;

@@ -19,18 +19,33 @@
 		            font-size: 14px;
 		            padding: 12px;
 		        }
+		        &:hover {
+				    animation: pulse 0.8s infinite;
+				    -webkit-animation: pulse 0.8s infinite;
+				    -moz-animation: pulse 0.8s infinite;
+				    -o-animation: pulse 0.8s infinite;
+		        }
 			}
 		}
 	}
 
-	h4 {
+	a {
+		display: inline-block;
+		text-decoration: none;
+		color: $color-white;
 		font-size: 20px;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 500;
+        &:hover {
+		    animation: pulse 1s infinite;
+		    -webkit-animation: pulse 1s infinite;
+		    -moz-animation: pulse 1s infinite;
+		    -o-animation: pulse 1s infinite;
+        }
+
         @include mq($until: tablet) {
             font-size: 16px;
             padding: 12px;
-            margin-bottom: 12px;
         }
 	}
 
@@ -38,7 +53,7 @@
 		border: none;
 		border-top: 1px solid $color-white;
 		width: 70px;
-		margin: 0px auto 12px auto;
+		margin: 24px auto 12px auto;
 	}
 
 	p {

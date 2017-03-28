@@ -18,7 +18,6 @@
     "angular": "angularjs#^1.6.3",
     "angular-fullpage.js": "git://github.com/hellsan631/angular-fullpage.js.git#44ec3a2e0b7bf7cb5cdcf6275097ee567961562e",
     "inuitcss": "^6.0.0-beta.4",
-    "angular-animate": "^1.6.3",
     "animate.css": "^3.5.2",
     "css-hamburgers": "^0.8.1"
   },
@@ -28,9 +27,6 @@
     },
     "angular-fullpage.js": {
       "main": "angular-fullpage.min.js"
-    },
-    "angular-animate": {
-      "main": "angular-animate.min.js"
     },
     "animate.css": {
       "main": "animate.min.css"

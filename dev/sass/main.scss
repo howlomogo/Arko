@@ -89,7 +89,6 @@ $inuit-offsets: true;
 @import "./bower_components/inuitcss/utilities/utilities.print";
 @import "./bower_components/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.utilities";
-@import "utilities/utilities.generic-animations";
 @import "utilities/utilities.section-animations";
 
 
@@ -101,6 +100,3 @@ $hamburger-layer-width: 34px !default;
 $hamburger-layer-height: 3px !default;
 $hamburger-layer-color: $color-white !default;
 @import "./bower_components/css-hamburgers/_sass/hamburgers/hamburgers";
-
-
-@import "shame";
