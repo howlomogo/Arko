@@ -1,9 +1,7 @@
 # Arko Website
 
-To run please use:
+Setup:
 
-npm install
-bower install
-gulp develop OR gulp compile
-
-if enough time, fade out animations when cancelling them
+* npm install
+* bower install
+* gulp compile
