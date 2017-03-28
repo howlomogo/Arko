@@ -1,6 +1,12 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var pug = require('gulp-pug');
+var mainBowerFiles = require('main-bower-files');
+ 
+gulp.task('bower', function() {
+    return gulp.src(mainBowerFiles())
+        .pipe(gulp.dest('./dist/vendor'))
+});
 
 gulp.task('pug', function buildHTML() {
 	return gulp.src('./dev/**/!(_)*.pug')

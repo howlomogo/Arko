@@ -21,5 +21,25 @@
     "angular-animate": "^1.6.3",
     "animate.css": "^3.5.2",
     "css-hamburgers": "^0.8.1"
+  },
+  "overrides": {
+    "angular": {
+      "main": "angular.min.js"
+    },
+    "angular-fullpage.js": {
+      "main": "angular-fullpage.min.js"
+    },
+    "angular-animate": {
+      "main": "angular-animate.min.js"
+    },
+    "animate.css": {
+      "main": "animate.min.css"
+    },
+    "css-hamburgers": {
+      "ignore" : true
+    },
+    "inuitcss": {
+      "ignore" : true
+    }
   }
 }
