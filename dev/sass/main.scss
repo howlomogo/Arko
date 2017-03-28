@@ -71,11 +71,11 @@ $inuit-wrapper-width: 1000px !default;
 @import "components/components.navigation";
 
 // SECTIONS
-@import "components/components.section-1";
-@import "components/components.section-2";
-@import "components/components.section-3";
-@import "components/components.section-projects";
-@import "components/components.section-footer";
+@import "sections/sections.section--hero-banner";
+@import "sections/sections.section--about";
+@import "sections/sections.section--projects-overview";
+@import "sections/sections.section--projects";
+@import "sections/sections.section--footer";
 
 
 

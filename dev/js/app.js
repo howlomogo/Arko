@@ -27,7 +27,7 @@ angular.module('app', ['fullPage.js', 'ngAnimate'])
 
 	
     $scope.mainOptions = {
-	    anchors: ['Herobanner', 'About', 'Projects', 'Rotterdam', 'Madrid', 'London', 'Sofia', 'Footer'],
+	    anchors: ['Banner', 'About', 'Projects', 'Rotterdam', 'Madrid', 'London', 'Sofia', 'Footer'],
 	    navigation: false,
 	    scrollingSpeed: 700,
 	    verticalCentered: true,
