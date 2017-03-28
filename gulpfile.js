@@ -13,7 +13,7 @@ gulp.task('pug', function buildHTML() {
 	.pipe(pug({
 		pretty: true,
 		basedir: './dev'
-	}))
+	})) 
 	.pipe(gulp.dest('./dist'));
 	console.log("Pug Compiled");
 });
