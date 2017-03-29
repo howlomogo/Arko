@@ -17,6 +17,13 @@
 @import "./bower_components/inuitcss/tools/tools.font-size";
 @import "./bower_components/inuitcss/tools/tools.clearfix";
 @import "./bower_components/inuitcss/tools/tools.hidden";
+
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  769px,
+    desktop: 980px,
+    wide:    1300px
+);
 @import "./bower_components/sass-mq/mq";
 
 
